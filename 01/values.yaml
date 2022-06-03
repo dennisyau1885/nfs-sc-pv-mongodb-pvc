@@ -1,0 +1,11 @@
+nfs:
+  server: pihole
+  path: /nfs
+  mountOptions:
+    - nfsvers: 4.1
+  volumeName: nfs-volume
+  reclaimPolicy: Retain
+
+storageClass:
+  name: nfs-client
+  allowVolumeExpansion: true
