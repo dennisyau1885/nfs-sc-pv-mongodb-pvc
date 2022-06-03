@@ -2,6 +2,8 @@ persistence:
   enabled: true
   storageClass: "nfs-client"
   accessModes:
-    - ReadWriteMany
+    - ReadWriteOnce
   size: 2Gi
-  mountPath: /mongodb
+  mountPath: /bitnami/mongodb
+auth:
+  rootPassword: password
